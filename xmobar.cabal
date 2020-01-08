@@ -257,6 +257,10 @@ library
        build-depends: http-conduit, http-types
        cpp-options: -DUVMETER
 
+    if os(freebsd)
+       build-depends: bsd-sysctl
+       cpp-options: -DFREEBSD
+
 executable xmobar
     hs-source-dirs:     app
     main-is:            Main.hs

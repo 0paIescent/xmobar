@@ -6,10 +6,11 @@ packages:
 
 flags:
  xmobar:
-   all_extensions: true
+   all_extensions: false
 
 extra-deps:
- - iwlib-0.1.0
+  - bsd-sysctl-1.0.8.0
+  # - iwlib-0.1.0
 
 nix:
     packages:
